@@ -26,6 +26,6 @@ jobs:
           file: docker/camera.Dockerfile
           push: true
           platforms: linux/arm64
-          tags: ghcr.io/${{ github.repository_owner }}/raspi-camera:latest
+          tags: ghcr.io/yachakawasi/raspi-camera:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
