@@ -9,4 +9,4 @@ ENV RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 WORKDIR /app
 
 CMD source /opt/ros/humble/setup.bash && \
-    ros2 run v4l2_camera v4l2_camera_node
+    ros2 run v4l2_camera v4l2_camera_node --ros-args -p camera_frame_id:=camera_v2
